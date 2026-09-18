@@ -32,3 +32,7 @@ public class Main {
         return output;
     }
 }
+
+// Time complexity: O(n)
+// Space complexity: O(1);
+// Test cases: "", "aaaaa", "abc123", "abcdef", "abcbcba"
