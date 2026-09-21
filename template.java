@@ -1,5 +1,5 @@
 /*
- * Problem Statemene
+ * Problem Statement
 */
 
 public class Main {
