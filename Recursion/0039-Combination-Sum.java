@@ -21,7 +21,10 @@
  * Output: [[2,2,2,2],[2,3,3],[3,5]]
 */
 
-public class Main {
+import java.util.ArrayList;
+import java.util.List;
+
+class Main {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> combination = new ArrayList<>();
         backtracking(combination, target, candidates, new ArrayList<>(), 0);

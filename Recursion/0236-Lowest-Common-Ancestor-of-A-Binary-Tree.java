@@ -25,7 +25,7 @@ class TreeNode {
     TreeNode(int x) { val = x; }
 }
 
-public class Main {
+class LowestCommonAncestorofABinaryTree {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if(root == null || root == p || root == q){
             return root;

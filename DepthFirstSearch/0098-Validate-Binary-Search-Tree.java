@@ -30,7 +30,7 @@ class TreeNode {
     }
 }
 
-public class Main {
+class Main {
     private TreeNode prev = null;
     public boolean isValidBST(TreeNode root) {
         return dfs(root);

@@ -16,7 +16,11 @@
  * Explanation: Intervals [1,4] and [4,5] are considered overlapping.
 */
 
-public class Main {
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+class Main {
     public int[][] merge(int[][] intervals) {
         if(intervals == null || intervals.length == 0){
             return new int[0][0];

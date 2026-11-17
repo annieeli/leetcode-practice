@@ -19,7 +19,7 @@
 // Input: head = []
 // Output: []
 
-public class ListNode {
+class ListNode {
     int val;
     ListNode next;
     ListNode() {}
@@ -27,7 +27,7 @@ public class ListNode {
     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }
 
-public class Main {
+class Main {
 	public ListNode reverse(ListNode head){
         return recursion(head, null);
     }

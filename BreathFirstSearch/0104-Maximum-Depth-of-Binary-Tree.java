@@ -9,7 +9,10 @@
 // Input: root = [3,9,20,null,null,15,7] (Root is 3, children are 9 and 20. 20's children are 15 and 7).
 // Output: 3
 
-public class TreeNode {
+import java.util.LinkedList;
+import java.util.Queue;
+
+class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
@@ -22,7 +25,7 @@ public class TreeNode {
     }
 }
 
-public class Main {
+class Main {
 	public int maxDepth(TreeNode root) {
         if(root == null){
             return 0;

@@ -13,7 +13,9 @@
  * Output: 2
 */
 
-public class Main {
+import java.util.HashMap;
+
+class Main {
     public int subarraySum(int[] nums, int k) {
         //currentSum, frequency of currentSum
         HashMap<Integer, Integer> map = new HashMap<>();

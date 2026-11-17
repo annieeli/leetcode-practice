@@ -23,7 +23,7 @@
  * Output: [0,0,9,0,0]
 */
 
-public class Main {
+class Main {
     public int[] productExceptSelf(int[] nums) {
         if(nums == null || nums.length == 0){
             return new int[0];
