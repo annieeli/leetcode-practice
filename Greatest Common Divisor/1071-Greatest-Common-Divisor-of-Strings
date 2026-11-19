@@ -1,0 +1,46 @@
+/*
+ * Problem: Greatest Common Divisor of Strings
+ *
+ * For two strings s and t, we say "t divides s" if and only if s = t + t + t + ... + t + t 
+ * (i.e., t is concatenated with itself one or more times).
+ * Given two strings str1 and str2, return the largest string x such that x divides both str1 and str2.
+ *
+ * An Anagram is a word or phrase formed by rearranging the letters of 
+ * a different word or phrase, typically using all the original letters exactly once.
+ *
+ * Example 1:
+ * Input: str1 = "ABCABC", str2 = "ABC"
+ * Output: "ABC"
+ *
+ * Example 2:
+ * Input: str1 = "ABABAB", str2 = "ABAB"
+ * Output: "AB"
+ *
+ * Example 3:
+ * Input: str1 = "LEET", str2 = "CODE"
+ * Output: ""
+*/
+
+class Main {
+    public String gcdOfStrings(String str1, String str2) {
+
+        if(!(str1+str2).equals(str2+str1)){
+            return "";
+        }
+
+        int length1 = str1.length();
+        int length2 = str2.length();
+
+        while (length2 != 0) {
+            int remainder = length1 % length2;
+            length1 = length2;
+            length2 = remainder;
+        }
+
+        return str1.substring(0, length1);
+    }
+}
+
+// Time complexity: O(n)
+// Space complexity: O(n)
+// Test cases: str1 = "AB", str2 = "ABABAB"; str1 = "AA", str2 = "AAAA"
