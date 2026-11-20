@@ -8,7 +8,7 @@
 // Output: 3
 // // Explanation: The longest valid substring is "abc", which has a length of 3.
 
-public class Main {
+class Main {
     public int longestUniqueString(String s){
         int left = 0;
         int right = 0;

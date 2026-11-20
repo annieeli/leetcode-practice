@@ -25,7 +25,11 @@
  * Output: [[0,0,0]]
 */
 
-public class Main {
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Arrays;
+
+class Main {
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> triplets = new ArrayList<>();
         Arrays.sort(nums);
